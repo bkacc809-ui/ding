@@ -1,64 +1,26 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Dingle Coin</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            height: 100vh;
-            background: url('chinese-smiley.png') no-repeat center center/cover;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-family: Arial, sans-serif;
-        }
-
-
-        .menu {
-            text-align: top;
-            /*background: rgba(0, 0, 0, 0.5);*/
-            padding: 40px 60px;
-            border-radius: 10px;
-            position: absolute;
-                top: 300px;
-        }
-
-        .menu a {
-            display: block;
-            color: white;
-            text-decoration: none;
-            font-size: 50px;
-            margin: 20px 0;
-            transition: 0.3s;
-            justify-content: center; 
-            text-align: center;
-        }
-
-        .menu a:hover {
-            color: #f0c040;
-        }
-        /*make ca smaller*/
-        #ca {
-            font-size: 25px;
-        }
-    </style>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krubb.nu</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <div class="menu">
-        <a href="#">Chart</a>
-        <a href="https://x.com/CreditCoinSoll">Twitter</a>
-        <a href="https://t.me/+Dnc9VWEBUfYzYzlk">Telegram</a>
-        <a id="ca" href="#">CA: 3rpbG1277UGBfTsfoWQr2mruj3tsHgwVABQqrE9Jpump</a>
-        <a href="https://pump.fun/coin/3rpbG1277UGBfTsfoWQr2mruj3tsHgwVABQqrE9Jpump">Buy Social Credit Coin</a>
+    <div id="loginBox">
+        <h2>Enter Password</h2>
+        <input type="password" id="passwordInput" placeholder="Password">
+        <button onclick="checkPassword()">Enter</button>
+        <p id="error" style="color:red;"></p>
     </div>
 
+    <div id="mainContent" style="display:none;">
+        <h1>Krubb.nu</h1>
+        <input type="text" id="orderId" placeholder="Order ID">
+        <button onclick="nuggets()">Nuggets</button>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
